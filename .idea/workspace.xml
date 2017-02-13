@@ -36,7 +36,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="CompressView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CompressView.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/CompressView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -46,7 +46,7 @@
         </entry>
       </file>
       <file leaf-file-name="CompressView.form" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CompressView.form">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/CompressView.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
@@ -349,6 +349,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/CompressView.form" />
+        <option value="$PROJECT_DIR$/src/main/java/view/CompressView.form" />
       </list>
     </option>
   </component>
@@ -460,8 +461,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CompressView" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -473,6 +474,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/view" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -779,7 +785,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/CompressView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/CompressView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -787,7 +793,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CompressView.form">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/CompressView.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
