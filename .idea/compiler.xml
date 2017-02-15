@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="compress_main" target="1.5" />
-      <module name="compress_test" target="1.5" />
+      <module name="compress_main" target="1.6" />
+      <module name="compress_test" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
