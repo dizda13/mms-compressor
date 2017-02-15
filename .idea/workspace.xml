@@ -2,43 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3e25acd-2c08-4cb7-9f30-978437199fc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/SequentialShannonFanoCodeGenerator.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/ShannonFanoCompressor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/ShannonFanoDecompressor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/ShannonFanoCodeGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/ShannonFanoConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/ShannonFanoSequentialCodeGenerator.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/ShannonFanoCompressor.java" afterPath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/FrequencyBasedCompressor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/ShannonFanoDecompressor.java" afterPath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/FrequencyBasedDecompressor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/ShannonFanoCodeGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/CodeGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/ShannonFanoConstants.java" afterPath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/FrequencyBasedCompressionConstants.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/ShannonFanoSequentialCodeGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/HuffmanCodeGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/Compressor.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/Compressor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/Decompressor.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/Decompressor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/counter/CharacterEntry$1.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/counter/CharacterEntry$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/counter/CharacterEntry.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/counter/CharacterEntry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/counter/DefaultFrequencyCounter.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/counter/DefaultFrequencyCounter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/counter/FrequencyCounter.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/counter/FrequencyCounter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/view/CompressView$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/view/CompressView$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/view/CompressView$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/view/DecompressView.form" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/ShannonFanoCompressor.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/ShannonFanoCompressor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/ShannonFanoDecompressor.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/ShannonFanoDecompressor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/CodeGenerator.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/CodeGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/ShannonFanoConstants.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/ShannonFanoConstants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/ShannonFanoSequentialCodeGenerator.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/codegenerator/ShannonFanoSequentialCodeGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/opencl/OpenCLShannonFanoCompressor.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/compression/shannonfano/opencl/OpenCLShannonFanoCompressor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/io/validation/DefaultFileValidator.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/io/validation/DefaultFileValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/domain/io/validation/FileValidator.class" afterPath="$PROJECT_DIR$/build/classes/main/domain/io/validation/FileValidator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/CompressView$1.class" afterPath="$PROJECT_DIR$/build/classes/main/view/CompressView$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/CompressView$2.class" afterPath="$PROJECT_DIR$/build/classes/main/view/CompressView$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/CompressView$3.class" afterPath="$PROJECT_DIR$/build/classes/main/view/CompressView$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/CompressView.class" afterPath="$PROJECT_DIR$/build/classes/main/view/CompressView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/DecompressView$1.class" afterPath="$PROJECT_DIR$/build/classes/main/view/DecompressView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/DecompressView$2.class" afterPath="$PROJECT_DIR$/build/classes/main/view/DecompressView$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/DecompressView$3.class" afterPath="$PROJECT_DIR$/build/classes/main/view/DecompressView$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/DecompressView.class" afterPath="$PROJECT_DIR$/build/classes/main/view/DecompressView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/view/Test.class" afterPath="$PROJECT_DIR$/build/classes/main/view/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/openCLCompressor" afterPath="$PROJECT_DIR$/build/resources/main/openCLCompressor" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/openCLCompressor" afterPath="$PROJECT_DIR$/src/main/resources/openCLCompressor" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out.txt" afterPath="$PROJECT_DIR$/out.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/opencl/OpenCLShannonFanoCompressor.java" afterPath="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/opencl/OpenCLShannonFanoCompressor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main.java" afterPath="$PROJECT_DIR$/src/main/java/main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/CompressView.form" afterPath="$PROJECT_DIR$/src/main/java/view/CompressView.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/CompressView.java" afterPath="$PROJECT_DIR$/src/main/java/view/CompressView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/DecompressView.java" afterPath="$PROJECT_DIR$/src/main/java/view/DecompressView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/Test.java" afterPath="$PROJECT_DIR$/src/main/java/view/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -117,11 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HuffmanCodeGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HuffmanCodeGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/HuffmanCodeGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding>
                 <element signature="e#1115#1128#0" expanded="true" />
                 <element signature="e#1458#1477#0" expanded="true" />
@@ -145,20 +143,36 @@
       <file leaf-file-name="CompressView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/CompressView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#2435#2800#0" expanded="true" />
+                <element signature="e#2799#2800#0" expanded="true" />
+                <element signature="e#2844#3215#0" expanded="true" />
+                <element signature="e#3214#3215#0" expanded="true" />
+                <element signature="e#3258#3628#0" expanded="true" />
+                <element signature="e#3627#3628#0" expanded="true" />
+                <element signature="e#3671#4043#0" expanded="true" />
+                <element signature="e#4042#4043#0" expanded="true" />
+                <element signature="e#4082#5914#0" expanded="true" />
+                <element signature="e#5913#5914#0" expanded="true" />
+                <element signature="e#5955#6594#0" expanded="true" />
+                <element signature="e#6593#6594#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="180">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -167,22 +181,9 @@
       <file leaf-file-name="DecompressView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/DecompressView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="80" column="25" lean-forward="false" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+            <state relative-caret-position="150">
+              <caret line="77" column="12" lean-forward="false" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrequencyBasedDecompressor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/FrequencyBasedDecompressor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#790#809#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -196,12 +197,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>compare</find>
-      <find>EOFE</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -587,6 +582,7 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/ShannonFanoConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/FrequencyBasedCompressionConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/main.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/view/CompressView.java" />
       </list>
     </option>
@@ -675,36 +671,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mms-compressor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DecompressView" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -925,6 +891,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mms-compressor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -933,7 +913,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/ensar/Projects/Fakultet/MMS/mms-compressor/src/main/java/domain/compression/shannonfano/ShannonFanoDecompressor.java&#10;gradle-wrapper.properties&#9;FILE&#9;file:///Users/ensar/Projects/Fakultet/MMS/mms-compressor/gradle/wrapper/gradle-wrapper.properties&#10;ShannCo&#9;PSI&#9;JAVA://domain.compression.shannonfano.codegenerator.ShannonFanoSequentialCodeGenerator&#10;works&#9;FILE&#9;file:///Users/ensar/Projects/Fakultet/MMS/mms-compressor/.idea/workspace.xml" />
+    <property name="SearchEverywhereHistoryKey" value="workspace.xml&#9;FILE&#9;file:///Users/ensar/Projects/Fakultet/MMS/mms-compressor/.idea/workspace.xml&#10;gradle-wrapper.properties&#9;FILE&#9;file:///Users/ensar/Projects/Fakultet/MMS/mms-compressor/gradle/wrapper/gradle-wrapper.properties&#10;ShannCo&#9;PSI&#9;JAVA://domain.compression.shannonfano.codegenerator.ShannonFanoSequentialCodeGenerator&#10;works&#9;FILE&#9;file:///Users/ensar/Projects/Fakultet/MMS/mms-compressor/.idea/workspace.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -1216,13 +1196,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/compression/Compressor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/io/IOException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1458,16 +1431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/compression/counter/FrequencyCounter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1508,32 +1471,6 @@
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/DecompressView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="80" column="25" lean-forward="false" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/CompressView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1583,8 +1520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/compression/shannonfano/codegenerator/HuffmanCodeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding>
             <element signature="e#1115#1128#0" expanded="true" />
             <element signature="e#1458#1477#0" expanded="true" />
@@ -1594,81 +1531,63 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>compress_test|compress</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: junit:junit:4.11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/DecompressView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="77" column="12" lean-forward="false" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/CompressView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#2435#2800#0" expanded="true" />
+            <element signature="e#2799#2800#0" expanded="true" />
+            <element signature="e#2844#3215#0" expanded="true" />
+            <element signature="e#3214#3215#0" expanded="true" />
+            <element signature="e#3258#3628#0" expanded="true" />
+            <element signature="e#3627#3628#0" expanded="true" />
+            <element signature="e#3671#4043#0" expanded="true" />
+            <element signature="e#4042#4043#0" expanded="true" />
+            <element signature="e#4082#5914#0" expanded="true" />
+            <element signature="e#5913#5914#0" expanded="true" />
+            <element signature="e#5955#6594#0" expanded="true" />
+            <element signature="e#6593#6594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
