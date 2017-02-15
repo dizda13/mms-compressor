@@ -1,19 +1,24 @@
 package view;
 
-import groovy.ui.Console;
-
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 
-
 /**
- * Created by admin on 13/02/2017.
+ * Created by admin on 15/02/2017.
  */
-public class CompressView {
-    public JPanel panel1;
+public class DecompressView {
+
+
+    private JPanel panel1;
+    private JButton decompressButton;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JButton browseButton;
+    private JButton browseButton1;
+    private JTextField textField1;
 
     public JPanel getPanel1() {
         return panel1;
@@ -23,56 +28,49 @@ public class CompressView {
         this.panel1 = panel1;
     }
 
-    private JButton compressButton;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JButton browseButton;
-    private JButton browseButton1;
-    private JTextField textField1;
+    public DecompressView(){
 
-
-    public CompressView(){
-
-        final JFileChooser fileToCompress = new JFileChooser();
+        final JFileChooser fileToDecompress = new JFileChooser();
         final JFileChooser folderToSave = new JFileChooser();
 
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("TEXT FILES", "txt", "text");
-        fileToCompress.setFileFilter(filter);
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("BINARY FILES", "bin", "binary");
+        fileToDecompress.setFileFilter(filter);
 
         folderToSave.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 
         browseButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                int returnVal = fileToCompress.showOpenDialog(panel1);
-                if(fileToCompress.getSelectedFile()!=null)
-                    textField3.setText(fileToCompress.getSelectedFile().getAbsolutePath());
+                int returnVal = fileToDecompress.showOpenDialog(panel1);
+                if(fileToDecompress.getSelectedFile()!=null)
+                    textField3.setText(fileToDecompress.getSelectedFile().getAbsolutePath());
             }
         });
 
         browseButton1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 int returnVal = folderToSave.showOpenDialog(panel1);
-                if(fileToCompress.getSelectedFile()!=null)
+                if(fileToDecompress.getSelectedFile()!=null)
                     textField2.setText(folderToSave.getSelectedFile().getAbsolutePath());
             }
         });
 
-        compressButton.addActionListener(new ActionListener() {
+        decompressButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                File text = new File(textField3.getText());
-                File bin = new File(textField2.getText() + "/" + textField1.getText() + ".bin");
+                File bin = new File(textField3.getText());
+                File text = new File(textField2.getText() + "/" + textField1.getText() + ".txt");
+
 
                 try {
-                    bin.createNewFile();
+                    text.createNewFile();
 
                     FileInputStream fileInputStream=new FileInputStream(bin);
                     FileOutputStream fileOutputStream=new FileOutputStream(text);
 
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();
-                    bin.delete();
+                    text.delete();
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
@@ -80,6 +78,4 @@ public class CompressView {
             }
         });
     }
-
-
 }
