@@ -1,5 +1,9 @@
 package view;
 
+import domain.compression.Decompressor;
+import domain.compression.shannonfano.ShannonFanoDecompressor;
+import domain.io.validation.DefaultFileValidator;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
@@ -29,6 +33,9 @@ public class DecompressView {
     }
 
     public DecompressView(){
+
+        final Decompressor decompressor = new ShannonFanoDecompressor(new DefaultFileValidator());
+
 
         final JFileChooser fileToDecompress = new JFileChooser();
         final JFileChooser folderToSave = new JFileChooser();
@@ -65,8 +72,7 @@ public class DecompressView {
                 try {
                     text.createNewFile();
 
-                    FileInputStream fileInputStream=new FileInputStream(bin);
-                    FileOutputStream fileOutputStream=new FileOutputStream(text);
+                    decompressor.decompress(bin, text);
 
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();

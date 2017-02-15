@@ -1,5 +1,11 @@
 package view;
 
+import domain.compression.Compressor;
+import domain.compression.counter.CharacterEntry;
+import domain.compression.counter.DefaultFrequencyCounter;
+import domain.compression.shannonfano.ShannonFanoCompressor;
+import domain.compression.shannonfano.codegenerator.ShannonFanoSequentialCodeGenerator;
+import domain.io.validation.DefaultFileValidator;
 import groovy.ui.Console;
 
 import javax.swing.*;
@@ -7,6 +13,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.util.ArrayList;
 
 
 /**
@@ -32,6 +39,12 @@ public class CompressView {
 
 
     public CompressView(){
+
+        final Compressor compressor = new ShannonFanoCompressor(
+                new DefaultFileValidator(),
+                new DefaultFrequencyCounter(new ArrayList<CharacterEntry>()),
+                new ShannonFanoSequentialCodeGenerator()
+        );
 
         final JFileChooser fileToCompress = new JFileChooser();
         final JFileChooser folderToSave = new JFileChooser();
@@ -66,10 +79,7 @@ public class CompressView {
 
                 try {
                     bin.createNewFile();
-
-                    FileInputStream fileInputStream=new FileInputStream(bin);
-                    FileOutputStream fileOutputStream=new FileOutputStream(text);
-
+                    compressor.compress(text, bin);
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();
                     bin.delete();
