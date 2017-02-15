@@ -3,10 +3,10 @@ package view;
 import domain.compression.Compressor;
 import domain.compression.counter.CharacterEntry;
 import domain.compression.counter.DefaultFrequencyCounter;
-import domain.compression.shannonfano.ShannonFanoCompressor;
-import domain.compression.shannonfano.codegenerator.ShannonFanoSequentialCodeGenerator;
+import domain.compression.shannonfano.FrequencyBasedCompressor;
+import domain.compression.shannonfano.codegenerator.HuffmanCodeGenerator;
+import domain.compression.shannonfano.codegenerator.SequentialShannonFanoCodeGenerator;
 import domain.io.validation.DefaultFileValidator;
-import groovy.ui.Console;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -40,10 +40,10 @@ public class CompressView {
 
     public CompressView(){
 
-        final Compressor compressor = new ShannonFanoCompressor(
+        final Compressor compressor = new FrequencyBasedCompressor(
                 new DefaultFileValidator(),
                 new DefaultFrequencyCounter(new ArrayList<CharacterEntry>()),
-                new ShannonFanoSequentialCodeGenerator()
+                new HuffmanCodeGenerator()
         );
 
         final JFileChooser fileToCompress = new JFileChooser();
@@ -85,6 +85,8 @@ public class CompressView {
                     bin.delete();
                 } catch (IOException e1) {
                     e1.printStackTrace();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
                 }
 
             }

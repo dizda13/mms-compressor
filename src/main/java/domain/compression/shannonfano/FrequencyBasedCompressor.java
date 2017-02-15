@@ -3,8 +3,8 @@ package domain.compression.shannonfano;
 import domain.compression.Compressor;
 import domain.compression.counter.CharacterEntry;
 import domain.compression.counter.FrequencyCounter;
-import domain.compression.shannonfano.codegenerator.ShannonFanoCodeGenerator;
-import domain.compression.shannonfano.codegenerator.ShannonFanoConstants;
+import domain.compression.shannonfano.codegenerator.CodeGenerator;
+import domain.compression.shannonfano.codegenerator.FrequencyBasedCompressionConstants;
 import domain.io.validation.FileValidator;
 
 import java.io.*;
@@ -13,20 +13,20 @@ import java.util.*;
 /**
  * Created by ensar on 13/02/17.
  */
-public class ShannonFanoCompressor implements Compressor {
+public class FrequencyBasedCompressor implements Compressor {
 
     private FileValidator fileValidator;
     private FrequencyCounter frequencyCounter;
-    private ShannonFanoCodeGenerator shannonFanoCodeGenerator;
+    private CodeGenerator codeGenerator;
 
     private Map<Character, String> codeMap;
 
-    public ShannonFanoCompressor(FileValidator fileValidator,
-                                 FrequencyCounter frequencyCounter,
-                                 ShannonFanoCodeGenerator shannonFanoCodeGenerator) {
+    public FrequencyBasedCompressor(FileValidator fileValidator,
+                                    FrequencyCounter frequencyCounter,
+                                    CodeGenerator codeGenerator) {
         this.fileValidator = fileValidator;
         this.frequencyCounter = frequencyCounter;
-        this.shannonFanoCodeGenerator = shannonFanoCodeGenerator;
+        this.codeGenerator = codeGenerator;
     }
 
     public void compress(File inputFile, File outputFile) throws IOException {
@@ -39,7 +39,7 @@ public class ShannonFanoCompressor implements Compressor {
 
         initializeCodeMap(characterFrequencies);
 
-        codeMap = shannonFanoCodeGenerator.generateCodes(characterFrequencies, codeMap);
+        codeMap = codeGenerator.generateCodes(characterFrequencies, codeMap);
 
         FileOutputStream fileOutputStreamUnbuffered = new FileOutputStream(outputFile);
 
@@ -54,13 +54,13 @@ public class ShannonFanoCompressor implements Compressor {
             String value = characterStringEntry.getValue();
 
             if(key.equals("\n")) {
-                key = ShannonFanoConstants.NEW_LINE_CHARACTER_TABLE_ALIAS;
+                key = FrequencyBasedCompressionConstants.NEW_LINE_CHARACTER_TABLE_ALIAS;
             }
-            bufferedWriter.writeUTF(key + ShannonFanoConstants.TABLE_DELIMITER + value);
+            bufferedWriter.writeUTF(key + FrequencyBasedCompressionConstants.TABLE_DELIMITER + value);
             bufferedWriter.writeUTF("\n");
-            System.out.println(key + ShannonFanoConstants.TABLE_DELIMITER + value);
+            System.out.println(key + FrequencyBasedCompressionConstants.TABLE_DELIMITER + value);
         }
-        bufferedWriter.writeUTF(ShannonFanoConstants.TABLE_END);
+        bufferedWriter.writeUTF(FrequencyBasedCompressionConstants.TABLE_END);
         bufferedWriter.writeUTF("\n");
 
 

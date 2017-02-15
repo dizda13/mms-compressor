@@ -8,6 +8,6 @@ import java.util.Map;
 /**
  * Created by ensar on 14/02/17.
  */
-public interface ShannonFanoCodeGenerator {
+public interface CodeGenerator {
     Map<Character, String> generateCodes(List<CharacterEntry> characterEntryList, Map<Character, String> codeMap);
 }

@@ -1,7 +1,7 @@
 package view;
 
 import domain.compression.Decompressor;
-import domain.compression.shannonfano.ShannonFanoDecompressor;
+import domain.compression.shannonfano.FrequencyBasedDecompressor;
 import domain.io.validation.DefaultFileValidator;
 
 import javax.swing.*;
@@ -34,7 +34,7 @@ public class DecompressView {
 
     public DecompressView(){
 
-        final Decompressor decompressor = new ShannonFanoDecompressor(new DefaultFileValidator());
+        final Decompressor decompressor = new FrequencyBasedDecompressor(new DefaultFileValidator());
 
 
         final JFileChooser fileToDecompress = new JFileChooser();
@@ -79,6 +79,8 @@ public class DecompressView {
                     text.delete();
                 } catch (IOException e1) {
                     e1.printStackTrace();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
                 }
 
             }

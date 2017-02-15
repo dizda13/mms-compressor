@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Created by ensar on 14/02/17.
  */
-public class ShannonFanoSequentialCodeGenerator implements ShannonFanoCodeGenerator {
+public class SequentialShannonFanoCodeGenerator implements CodeGenerator {
 
     public Map<Character, String> generateCodes(List<CharacterEntry> characterEntryList, Map<Character, String> codeMap) {
         return recursiveListSplit(characterEntryList, codeMap);

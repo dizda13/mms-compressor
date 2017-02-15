@@ -1,7 +1,7 @@
 package domain.compression.shannonfano;
 
 import domain.compression.Decompressor;
-import domain.compression.shannonfano.codegenerator.ShannonFanoConstants;
+import domain.compression.shannonfano.codegenerator.FrequencyBasedCompressionConstants;
 import domain.io.validation.FileValidator;
 
 import java.io.*;
@@ -11,11 +11,11 @@ import java.util.Map;
 /**
  * Created by ensar on 13/02/17.
  */
-public class ShannonFanoDecompressor implements Decompressor {
+public class FrequencyBasedDecompressor implements Decompressor {
 
     private FileValidator fileValidator;
 
-    public ShannonFanoDecompressor(FileValidator fileValidator) {
+    public FrequencyBasedDecompressor(FileValidator fileValidator) {
         this.fileValidator = fileValidator;
     }
 
@@ -29,16 +29,16 @@ public class ShannonFanoDecompressor implements Decompressor {
         DataInputStream buf = new DataInputStream(is);
 
         String line = buf.readUTF();
-        while(line != null && !line.contains(ShannonFanoConstants.TABLE_END)) {
-            String[] strings = line.split(ShannonFanoConstants.TABLE_DELIMITER);
+        while(line != null && !line.contains(FrequencyBasedCompressionConstants.TABLE_END)) {
+            String[] strings = line.split(FrequencyBasedCompressionConstants.TABLE_DELIMITER);
             if(strings.length == 2) {
-                if(strings[0].equals(ShannonFanoConstants.NEW_LINE_CHARACTER_TABLE_ALIAS)) {
+                if(strings[0].equals(FrequencyBasedCompressionConstants.NEW_LINE_CHARACTER_TABLE_ALIAS)) {
                     codeMap.put(strings[1], '\n');
                 } else {
                     codeMap.put(strings[1], strings[0].charAt(0));
                 }
             } else if (strings.length == 3) {
-                codeMap.put(strings[2], ShannonFanoConstants.TABLE_DELIMITER.toCharArray()[0]);
+                codeMap.put(strings[2], FrequencyBasedCompressionConstants.TABLE_DELIMITER.toCharArray()[0]);
             }
             line = buf.readUTF();
         }
