@@ -4,9 +4,10 @@ import domain.compression.Compressor;
 import domain.compression.Decompressor;
 import domain.compression.counter.CharacterEntry;
 import domain.compression.counter.DefaultFrequencyCounter;
-import domain.compression.shannonfano.ShannonFanoCompressor;
-import domain.compression.shannonfano.ShannonFanoDecompressor;
-import domain.compression.shannonfano.codegenerator.ShannonFanoSequentialCodeGenerator;
+import domain.compression.shannonfano.FrequencyBasedCompressor;
+import domain.compression.shannonfano.FrequencyBasedDecompressor;
+import domain.compression.shannonfano.codegenerator.HuffmanCodeGenerator;
+import domain.compression.shannonfano.codegenerator.SequentialShannonFanoCodeGenerator;
 import domain.compression.shannonfano.opencl.OpenCLShannonFanoCompressor;
 import domain.io.validation.DefaultFileValidator;
 
@@ -51,12 +52,7 @@ public class CompressView {
 
     public CompressView(){
 
-        final Compressor compressor = new ShannonFanoCompressor(
-                new DefaultFileValidator(),
-                new DefaultFrequencyCounter(new ArrayList<CharacterEntry>()),
-                new ShannonFanoSequentialCodeGenerator()
-        );
-        final Decompressor decompressor = new ShannonFanoDecompressor(new DefaultFileValidator());
+        final Decompressor decompressor = new FrequencyBasedDecompressor(new DefaultFileValidator());
 
         final JFileChooser fileToCompress = new JFileChooser();
         final JFileChooser fileToDecompress = new JFileChooser();
@@ -116,10 +112,10 @@ public class CompressView {
                     bin.createNewFile();
                     switch(comboBox1.getSelectedIndex()){
                         case 0:
-                            new ShannonFanoCompressor(
+                            new FrequencyBasedCompressor(
                                     new DefaultFileValidator(),
                                     new DefaultFrequencyCounter(new ArrayList<CharacterEntry>()),
-                                    new ShannonFanoSequentialCodeGenerator()
+                                    new SequentialShannonFanoCodeGenerator()
                             ).compress(text,bin);
                             break;
                         case 1:
@@ -127,10 +123,10 @@ public class CompressView {
                                     new DefaultFileValidator()).compress(text,bin);
                             break;
                         case 2:
-                            new ShannonFanoCompressor(
+                            new FrequencyBasedCompressor(
                                     new DefaultFileValidator(),
                                     new DefaultFrequencyCounter(new ArrayList<CharacterEntry>()),
-                                    new ShannonFanoSequentialCodeGenerator()
+                                    new HuffmanCodeGenerator()
                             ).compress(text,bin);
                             break;
                     }
@@ -141,6 +137,8 @@ public class CompressView {
                     bin.delete();
                 } catch (IOException e1) {
                     e1.printStackTrace();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
                 }
 
             }

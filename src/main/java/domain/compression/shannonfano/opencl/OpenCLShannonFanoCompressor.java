@@ -1,7 +1,7 @@
 package domain.compression.shannonfano.opencl;
 
 import domain.compression.Compressor;
-import domain.compression.shannonfano.codegenerator.ShannonFanoConstants;
+import domain.compression.shannonfano.codegenerator.FrequencyBasedCompressionConstants;
 import domain.io.validation.FileValidator;
 
 import java.io.File;
@@ -29,8 +29,8 @@ public class OpenCLShannonFanoCompressor implements Compressor {
         p.command(clPath.getPath(),
                 inputFile.getPath(),
                 outputFile.getPath(),
-                ShannonFanoConstants.TABLE_DELIMITER,
-                ShannonFanoConstants.TABLE_END,
+                FrequencyBasedCompressionConstants.TABLE_DELIMITER,
+                FrequencyBasedCompressionConstants.TABLE_END,
                 kernel.getPath());
         System.out.println(p.command());
         p.redirectErrorStream(true);
