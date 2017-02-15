@@ -7,6 +7,7 @@ import domain.compression.counter.DefaultFrequencyCounter;
 import domain.compression.shannonfano.ShannonFanoCompressor;
 import domain.compression.shannonfano.ShannonFanoDecompressor;
 import domain.compression.shannonfano.codegenerator.ShannonFanoSequentialCodeGenerator;
+import domain.compression.shannonfano.opencl.OpenCLShannonFanoCompressor;
 import domain.io.validation.DefaultFileValidator;
 
 import javax.swing.*;
@@ -115,13 +116,22 @@ public class CompressView {
                     bin.createNewFile();
                     switch(comboBox1.getSelectedIndex()){
                         case 0:
-                            compressor.compress(text, bin);
+                            new ShannonFanoCompressor(
+                                    new DefaultFileValidator(),
+                                    new DefaultFrequencyCounter(new ArrayList<CharacterEntry>()),
+                                    new ShannonFanoSequentialCodeGenerator()
+                            ).compress(text,bin);
                             break;
                         case 1:
-                            compressor.compress(text, bin);
+                            new OpenCLShannonFanoCompressor(
+                                    new DefaultFileValidator()).compress(text,bin);
                             break;
                         case 2:
-                            compressor.compress(text, bin);
+                            new ShannonFanoCompressor(
+                                    new DefaultFileValidator(),
+                                    new DefaultFrequencyCounter(new ArrayList<CharacterEntry>()),
+                                    new ShannonFanoSequentialCodeGenerator()
+                            ).compress(text,bin);
                             break;
                     }
 
